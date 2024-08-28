@@ -6,29 +6,31 @@
     <title>Formulário de contato</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="space-y-10 bg-zinc-100 ">
-    <main class="w-screen flex justify-center ">
+    <main class="w-full flex justify-center pt-20 ">
         <section class="w-full max-w-screen-xl mt-8 flex bg-white rounded-xl">
             <div class="w-2/5 bg-violet-900 rounded-xl p-8 relative overflow-hidden">
                 <div class="space-y-5">
                     <h1 class="text-white text-xl font-semibold">Informações de contato</h1>
                     <p class="text-zinc-300">Preencha o formulário e nossa equipe retornará uma resposta dentro de 24 horas</p>
                 </div>
-                <span class="bg-rose-300 size-96 rounded-full absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2"></span>
-                <span class="bg-violet-700 opacity-90 size-32 rounded-full absolute bottom-20 right-20" ></span>
+                <span id="ballRose" class="bg-rose-300 size-96 rounded-full absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2"></span>
+                <span id="ballPurple" class="bg-violet-700 opacity-90 size-32 rounded-full absolute bottom-20 right-20" ></span>
                 
                 <div class="space-y-10 mt-14">
-                    <div class="flex items-center space-x-5">
+                    <div id="tel" class="flex items-center space-x-5">
                         <i class="fa-solid fa-phone text-rose-300"></i>
                         <p class="text-white">+55 (11) 99999-9999</p>
                     </div>
-                    <div class="flex items-center space-x-5">
+                    <div id="email" class="flex items-center space-x-5">
                         <i class="fa-solid fa-envelope text-rose-300"></i>
                         <p class="text-white">hello@teste.com</p>
                     </div>
-                    <div class="flex items-center space-x-5">
+                    <div id="loc" class="flex items-center space-x-5">
                         <i class="fa-solid fa-location-dot text-rose-300"></i>
                         <p class="text-white">102 Rua da Sorte</p>
                     </div>
@@ -57,7 +59,7 @@
                     <div class="w-full flex gap-8 justify-between ">
                         <div class="flex flex-col border-b-2 w-full group">
                             <label for="email" class="text-zinc-600 group-focus-within:text-violet-900">Mail:</label>
-                            <input type="text" name="email" id="email" class="outline-white focus:border-b-violet-900">
+                            <input type="text" name="email" id="email" class="outline-white focus:border-b-0violet-900">
                         </div>
                         
                         <div class="flex flex-col border-b-2 w-full">
@@ -83,7 +85,7 @@
             </div>
         </section>
     </main>
-    <footer class="py-4 gap-4 flex flex-col items-center justify-center bg-violet-700 text-white h-36">
+    <footer class=" py-4 gap-4 flex flex-col items-center justify-center bg-violet-900 text-white h-36">
         <div className="flex gap-2 items-center">
             <span>Desenvolvido com </span>
             <i class="fa-solid fa-heart text-white size-4"></i>

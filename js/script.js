@@ -53,3 +53,54 @@ const form = document.querySelector('form');
             alert(errorMessage);
         }
     });
+
+    $(document).ready(function () {
+        /*SCROLL REVIEW*/
+        ScrollReveal().reveal("#ballPurple", {
+          //pega o id da div que segura todos e faz a animação
+          origin: "left",
+          duration: 2000,
+          distance: "10%",
+        });
+      
+        ScrollReveal().reveal("#ballRose", {
+          //pega o id ou class da div que segura todos e faz a animação
+          origin: "right",
+          duration: 1000,
+          distance: "15%",
+        });
+      
+        ScrollReveal().reveal("#tel", {
+          origin: "left",
+          duration: 2000,
+          distance: "20%",
+        });
+        ScrollReveal().reveal("#email", {
+          origin: "left",
+          duration: 2300,
+          distance: "20%",
+        });
+        ScrollReveal().reveal("#loc", {
+          origin: "left",
+          duration: 2600,
+          distance: "20%",
+        });
+     
+        ScrollReveal().reveal("#chef", {
+          origin: "left",
+          duration: 2500,
+          distance: "20%",
+        });
+      
+        ScrollReveal().reveal("#dep01", {
+          origin: "right",
+          duration: 900,
+          distance: "10%",
+        });
+      
+        ScrollReveal().reveal("#dep02", {
+          origin: "right",
+          duration: 1500,
+          distance: "10%",
+        });
+      });
